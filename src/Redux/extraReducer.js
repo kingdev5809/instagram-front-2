@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-export const backendLink = "http://localhost:5000";
+export const backendLink = "https://insta-clone-server-full-2.onrender.com";
 export const API = axios.create({
   baseURL: backendLink,
 });
