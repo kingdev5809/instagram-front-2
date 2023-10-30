@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { DeletePost, OneUserGetPostsAPi } from "../../Redux/extraReducer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { confirmAlert } from "react-confirm-alert";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import EditModal from "./ProfileEdit";
 import Review from "../../Components/Review/Review";
