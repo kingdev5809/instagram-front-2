@@ -1,0 +1,46 @@
+:root {
+  --twoary: hsl(0, 0%, 98%);
+  --border: hsl(0, 0%, 86%);
+  --history-border: hsl(0, 0%, 78%);
+  --link: hsl(204, 100%, 48%);
+
+  --nav-height: 44px;
+  --primaries: hsl(0, 0%, 100%);
+
+  --like: hsl(355, 82%, 61%);
+  --text-dark: hsl(0, 0%, 15%);
+  --header-height: 44px;
+
+  --text-light: hsl(0, 0%, 60%);
+  --img-border: hsla(0, 0%, 0%, 0.1);
+}
+
+.authed-page {
+  .aside-side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: white;
+  }
+  .main-side {
+    margin-left: 15%;
+  }
+}
+
+/* Loader */
+
+.loader {
+  width: 5rem;
+  height: 5rem;
+  border: 0.6rem solid #999;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: loader 500ms linear infinite;
+}
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}

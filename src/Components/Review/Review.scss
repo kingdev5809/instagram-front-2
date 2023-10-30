@@ -1,0 +1,171 @@
+.review-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  transition: opacity 0.3s ease-in-out;
+}
+.review-modal .modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 520px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.review-modal .modal-header {
+  padding: 0 10px;
+  border-bottom: 1px solid #ccc;
+}
+.review-modal .modal-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.review-modal .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.review-modal .modal-body {
+  padding: 10px;
+  display: flex;
+}
+.review-modal .post-image {
+  width: 50%;
+  height: 100%;
+}
+.review-modal .post-image img {
+  width: 100%;
+  height: 400px;
+}
+.review-modal .post-image button {
+  padding: 6px 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+}
+.review-modal .post-content {
+  font-size: 2.5rem;
+  border-top: 1px solid gray;
+}
+.review-modal .post-review {
+  width: 50%;
+  padding: 10px;
+}
+.review-modal .post-review h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.review-modal .post-review a {
+  text-decoration: none;
+  color: #000;
+}
+.review-modal .modal-footer {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+.review-modal .review-box {
+  overflow-y: scroll;
+  height: 300px;
+}
+.review-modal .review-box::-webkit-scrollbar {
+  width: 12px;
+  height: 5px;
+  border-radius: 10px;
+}
+.review-modal .review-box::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.review-modal .review-box::-webkit-scrollbar-thumb {
+  background-color: rgba(167, 167, 167, 0.5);
+  border-radius: 5px;
+}
+.review-modal .review-box::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(77, 56, 56, 0.7);
+}
+.review-modal .review-box .review-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+}
+.review-modal .review-box .review-item:one-child {
+  margin: 0;
+}
+.review-modal .review-box .review-item img {
+  width: 30px;
+}
+.review-modal .review-box .review-item p {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+.review-modal .review-box .review-item p span {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.review-modal .review-input {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  gap: 5px;
+}
+.review-modal .review-input .emoji {
+  cursor: pointer;
+  position: relative;
+}
+.review-modal .review-input .emoji .reactions {
+  position: absolute;
+  bottom: 30px;
+  z-index: 99;
+}
+.review-modal .review-input .emoji .reactions .close {
+  position: absolute;
+  font-size: 1.5rem;
+  right: -10px;
+  top: -20px;
+  background-color: white;
+  box-shadow: gray 0px 1px 4px 0px;
+  padding: 3px 7px;
+  border-radius: 100px;
+}
+.review-modal .review-input .emoji svg {
+  font-size: 2rem;
+}
+.review-modal .review-input input {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 100%;
+}
+.review-modal .review-input button {
+  color: blue;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 5px;
+}
+.review-modal .btn {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.review-modal .btn-primary {
+  background-color: #000;
+  color: #fff;
+}

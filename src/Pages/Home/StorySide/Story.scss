@@ -1,0 +1,120 @@
+.history {
+  background-color: transparent;
+  flex-direction: column;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 6px;
+}
+.box__history {
+  width: 100%;
+  background-color: var(--primaries);
+  flex-shrink: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: relative;
+  overflow: hidden;
+  .box__history::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    background-color: var(--border);
+    height: 1px;
+    bottom: 0;
+    &::after {
+      content: none;
+    }
+  }
+  .box__boxStory__content {
+    gap: 16px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .stories__content {
+    padding: 16px;
+    display: flex;
+    &::-webkit-scrollbar {
+      display: none;
+      display: flex;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      gap: 16px;
+      position: relative;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+    }
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.5);
+  }
+  .history--has-history .boxStory__border {
+    stroke: url(#--history-gradient);
+    strokewidth: 2;
+  }
+  .boxStory__picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 56px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 1px solid var(--img-border);
+      border-radius: 50%;
+    }
+  }
+  .boxStory__user {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-light);
+    text-transform: lowercase;
+    max-width: 72px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .history--has-history {
+    .boxStory__user {
+      color: var(--text-dark);
+    }
+  }
+  .boxStory__avatar {
+    position: relative;
+  }
+  .boxStory__border {
+    width: 64px;
+    height: 64px;
+    fill: none;
+    stroke: var(--history-border);
+    strokewidth: 1.5;
+  }
+  @media (min-width: 620px) {
+    /* this  created by student*/
+    .box__history {
+      /* this  created by student*/
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+    /* this  created by student*/
+    .box__history::after {
+      content: none;
+    }
+  }
+}

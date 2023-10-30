@@ -1,0 +1,65 @@
+.content-post {
+  width: 85%;
+  margin: 30px auto;
+}
+.content-post .post-item {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 20px 0;
+}
+.content-post .post-item .title {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-post .post-item .title .user {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.content-post .post-item .title .user img {
+  width: 30px;
+  border-radius: 100px;
+}
+.content-post .post-item .content::selection {
+  color: transparent;
+  background-color: transparent;
+}
+.content-post .post-item .content img {
+  width: 100%;
+  max-height: 400px;
+}
+.content-post .post-item .content .icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.content-post .post-item .content .icons .icon {
+  display: flex;
+  gap: 10px;
+  .heart {
+    img {
+      width: 25px;
+    }
+  }
+}
+.content-post .post-item .content .icons svg {
+  font-size: 2.6rem;
+  color: red;
+  cursor: pointer;
+}
+.content-post .post-item .content .like-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 10px;
+}
+.content-post .post-item .content .like-count img {
+  width: 20px;
+}
+.content-post .post-item .content .text-post {
+  padding: 10px;
+}
+.content-post .post-item .content .text-post p {
+  font-size: 2rem;
+}

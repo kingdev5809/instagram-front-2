@@ -1,0 +1,88 @@
+.add-post {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background-color: #00000073;
+  height: 100%;
+  top: 0;
+  z-index: 999;
+  // This is inner modal
+  &-inner {
+    top: 10%;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: auto;
+    border-radius: 5px;
+    margin: auto;
+    width: 600px;
+    min-height: 400px;
+    .one-option {
+      height: 500px;
+      .header {
+        justify-content: center;
+        display: flex;
+      }
+      // This is main modal
+
+      .main {
+        margin-top: 25%;
+        text-align: center;
+        input {
+          display: none;
+        }
+        button {
+          cursor: pointer;
+          background-color: #1877f2;
+          padding: 7px 13px;
+          border: none;
+          color: white;
+          border-radius: 5px;
+        }
+      }
+    }
+    // This is option modal
+
+    .two-option {
+      border-radius: 5px;
+      align-items: start;
+      padding: 0px;
+      img {
+        width: 100%;
+        max-height: 500px;
+      }
+      .inner {
+        padding: 10px;
+        margin: 30px 0;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        input {
+          width: 76%;
+          outline: none;
+          padding: 10px;
+        }
+        button {
+          color: white;
+          margin-bottom: 10px;
+          padding: 11px 52px;
+          border-radius: 3px;
+          background-color: #1877f2;
+          border: none;
+          cursor: pointer;
+          margin: 30px 0;
+        }
+      }
+    }
+  }
+  .close-modal {
+    top: 10px;
+    color: black;
+    cursor: pointer;
+    right: 10px;
+    position: absolute;
+    font-size: 3rem;
+  }
+}

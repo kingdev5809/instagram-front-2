@@ -1,0 +1,88 @@
+.aside-component {
+  width: 250px;
+  min-height: 99vh;
+  margin: 0px 10px;
+  border-right: 1px solid #cacaca;
+}
+.aside-component .aside-header .insta-log {
+  width: 120px;
+  margin: 15px 0;
+}
+.aside-component .aside-header .logo-insta {
+  display: none;
+}
+.aside-component .routes .route {
+  display: block;
+  margin: 30px 0;
+}
+.aside-component .routes .route a {
+  display: flex;
+  gap: 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 1.7rem;
+  align-items: center;
+}
+.aside-component .routes .route a img {
+  width: 25px;
+}
+.aside-component .aside-footer {
+  margin-top: 90%;
+  display: flex;
+  gap: 10px;
+  font-size: 2.2rem;
+  align-items: center;
+  cursor: pointer;
+}
+.aside-component .aside-footer img {
+  width: 30px;
+}
+.aside-component.searchbar-show {
+  overflow-x: hidden;
+  width: 50px;
+  border: none;
+}
+.aside-component.searchbar-show .aside-header .insta-log {
+  display: none;
+}
+.aside-component.searchbar-show .aside-header .logo-insta {
+  display: block;
+  width: 30px;
+  margin: 15px 0;
+}
+.aside-component.searchbar-show .routes .route a {
+  margin: 10px 0;
+}
+.aside-component.searchbar-show .routes .route a span {
+  display: none;
+}
+.aside-component.searchbar-show .aside-footer span {
+  display: none;
+}
+.aside-component.searchbar-show .aside-footer img {
+  width: 30px;
+}
+@media screen and (max-width: 950px) {
+  .aside-component {
+    overflow-x: hidden;
+    width: 50px;
+  }
+  .aside-component .aside-header .insta-log {
+    display: none;
+  }
+  .aside-component .aside-header .logo-insta {
+    display: block;
+    width: 30px;
+    margin: 12px 0;
+  }
+  .aside-component .routes .route a span {
+    display: none;
+  }
+  .aside-component .aside-footer span {
+    display: none;
+  }
+  .aside-component .aside-footer svg {
+    font-size: 2.5rem;
+    padding: 0px 10px;
+  }
+}
